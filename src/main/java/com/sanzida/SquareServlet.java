@@ -12,10 +12,10 @@ public class SquareServlet extends HttpServlet {
 	
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException {
-    int k= (int)req.getAttribute("k");
-        k=k*k;
-        // Output the result
-        PrintWriter print = res.getWriter();
-        print.println("Result: "+k);
+//    int k= (int)req.getAttribute("k");
+//        k=k*k;
+//        // Output the result
+//        PrintWriter print = res.getWriter();
+       // print.println("Result: "+k);
     }
 }
