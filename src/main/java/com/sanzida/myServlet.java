@@ -23,6 +23,7 @@ public class myServlet extends HttpServlet {
 		String str= ctx.getInitParameter("name");
 		out.println(str);
 		
+		
 		//for specific servlet
 		ServletConfig cf= getServletConfig();
 		String str1= cf.getInitParameter("name");
