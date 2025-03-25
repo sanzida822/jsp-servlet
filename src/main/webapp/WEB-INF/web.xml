@@ -17,6 +17,17 @@
     </servlet-mapping>
 -->
    <!-- Define the Servlet -->
+   
+     <servlet>
+        <servlet-name>DemoServlet</servlet-name>
+        <servlet-class>com.sanzida1.DemoServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DemoServlet</servlet-name>
+        <url-pattern>/DemoServlet</url-pattern>
+    </servlet-mapping>
+
     <servlet>
         <servlet-name>square</servlet-name>
         <servlet-class>com.sanzida.SquareServlet</servlet-class>

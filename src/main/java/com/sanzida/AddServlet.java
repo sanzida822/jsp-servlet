@@ -21,7 +21,7 @@ public class AddServlet extends HttpServlet {
 		int k= i+j;
 	    res.getWriter().println(k);
         //session management
-//        req.setAttribute("k", k);      
+//      req.setAttribute("k", k);      
 //		RequestDispatcher dis= req.getRequestDispatcher("sq"); //call sq from web.xml
 //		dis.forward(req, res);
 	    
