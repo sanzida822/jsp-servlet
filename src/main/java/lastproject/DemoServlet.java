@@ -1,6 +1,10 @@
 package lastproject;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -12,9 +16,9 @@ import javax.servlet.http.HttpServletResponse;
 public class DemoServlet extends HttpServlet {
     
     protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-        Student s = new Student(2, "nitu");
-        
-        req.setAttribute("student", s); 
+       // Student s = new Student(2, "nitu");
+        List<Student> studs=  Arrays.asList(new Student(1,"sanzida"), new Student(1,"nitu"));
+        req.setAttribute("students", studs); 
         
         RequestDispatcher dr = req.getRequestDispatcher("Display.jsp");
         dr.forward(req, res);
